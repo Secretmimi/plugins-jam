@@ -44,7 +44,7 @@ module.exports = function ({ dispatch, application }) {
     if (!sniffing || value.length !== 14) return;
 
     const slot = value[11], id = value[12];
-    if (id === '138' || id === '148') return;
+    if (id === '138' || id === '148' || id === '342') return;
 
     dispatch.sendRemoteMessage(`%xt%o%ir%${currentRoom}%${slot}%`);
   };
