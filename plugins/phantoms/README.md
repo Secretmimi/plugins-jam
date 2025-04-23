@@ -8,7 +8,7 @@ A plugin that automates the Phantoms adventure on Hard Mode in Animal Jam Classi
 - Toggle IL filtering on/off to recycle unwanted items
 - `/phantoms` toggles both the adventure loop and item filtering
 - `/phantoms off` keeps the loop running but disables IL‑based recycling
-- Smart IL sniffing: only recycles items when packet length and ID match criteria (exactly 14 fields, IDs ≠ 138/148)
+- Smart IL sniffing: only recycles items when packet length and ID match criteria (exactly 14 fields, IDs ≠ 138/148/342)
 
 ## How to Use
 
@@ -38,16 +38,19 @@ Running `/phantoms` when active will stop both the loop and IL sniffing:
 ## Tips
 
 - Filtering is enabled by default when you first run `/phantoms`.
-- Filtering recycles any non‑clothing‑beta items (IDs other than `138` or `148`) immediately.
+- Filtering recycles any non‑clothing‑beta items (IDs other than `138`, `148`, and `148`) immediately.
 - Ensure you're in a room before using the plugin; otherwise, no packets will be sent.
 
 ## How It Works
 
 - The plugin sends a predefined sequence of packets to start and complete the Phantoms adventure on Hard Mode every 500 ms.
-- When IL sniffing is enabled, it listens for `il` packets of exact length (14 fields) and sends a recycle packet for any item IDs that aren't `138` or `148`.
+- When IL sniffing is enabled, it listens for `il` packets of exact length (14 fields) and sends a recycle packet for any item IDs that aren't `138`, `148`, or `148`.
 - The loop and sniffing states can be toggled independently using the `/phantoms` and `/phantoms off` commands.
 
 ## Compatibility
 
 This plugin is designed specifically for Animal Jam Classic and requires Jam's plugin API (`dispatch`, `application`).
 
+## Author
+
+Nosmile
