@@ -53,7 +53,7 @@ module.exports = function ({ dispatch, application }) {
     if (loopActive) return;
     refreshRoom();
     index = 0;
-    interval = dispatch.setInterval(sendNext, 500);
+    interval = dispatch.setInterval(sendNext, 800);
     loopActive = true;
   };
   const stopAll = () => {
