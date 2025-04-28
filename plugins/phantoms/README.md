@@ -4,7 +4,7 @@ A plugin that automates the Phantoms adventure on Hard Mode in Animal Jam Classi
 
 ## Features
 
-- Automatically loops through the Phantoms adventure sequence (500 ms interval)
+- Automatically loops through the Phantoms adventure sequence (800 ms interval)
 - Toggle IL filtering on/off to recycle unwanted items
 - `/phantoms` toggles both the adventure loop and item filtering
 - `/phantoms off` keeps the loop running but disables IL‑based recycling
@@ -43,7 +43,7 @@ Running `/phantoms` when active will stop both the loop and IL sniffing:
 
 ## How It Works
 
-- The plugin sends a predefined sequence of packets to start and complete the Phantoms adventure on Hard Mode every 500 ms.
+- The plugin sends a predefined sequence of packets to start and complete the Phantoms adventure on Hard Mode every 800 ms.
 - When IL sniffing is enabled, it listens for `il` packets of exact length (14 fields) and sends a recycle packet for any item IDs that aren't `138`, `148`, or `342`.
 - The loop and sniffing states can be toggled independently using the `/phantoms` and `/phantoms off` commands.
 
