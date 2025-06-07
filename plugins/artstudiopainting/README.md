@@ -8,9 +8,7 @@
 These features were part of the base Masterpiece Maker mini‑game:
 
 -   **Brush & Pencil Tools**: Freehand drawing with adjustable brush sizes.
-    
--   **Eraser**: Erase portions of your artwork.
-    
+        
 -   **Flood Fill**: Fill contiguous regions with a chosen color.
     
 -   **Airbrush & Smudge**: Soft‑edged spray and smudge effects for texture.
