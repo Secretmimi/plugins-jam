@@ -49,6 +49,8 @@ This version introduces the following additions:
 
 ### Opacity & Colors
 
+-   **Size Slider**: Control brush size with presision (1px-300px).
+
 -   **Opacity Slider**: Drag handle to set brush (air brush and paint brush) opacity (0–100%).
     
 -   **Hardness Slider**: Control brush (air brush and paint brush) hardness (0–100%) for soft or crisp edges.
